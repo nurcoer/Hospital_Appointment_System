@@ -4,87 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9C000000"
-    tools:context=".HastaneSil">
+    android:background="#493A3A"
+    tools:context=".HasteneEkleActivity">
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/imageView6"
         android:layout_width="63dp"
         android:layout_height="58dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:foreground="@drawable/profil1"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintVertical_bias="0.128" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView2"
         android:layout_width="251dp"
-        android:layout_height="45dp"
+        android:layout_height="38dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="152dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="48dp"
         android:background="#00C70303"
-        android:text="HASTANE SİL"
+        android:text="     HASTANE EKLE"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#4BA5EC"
-        app:layout_constraintBottom_toTopOf="@+id/spnrHastaneAdi6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
-
-    <Button
-        android:id="@+id/btnHstnSil3"
-        android:layout_width="93dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="32dp"
-        android:background="#4BA5EC"
-        android:text="SİL"
-        android:textColor="#191F1E"
-        android:textColorHighlight="#12962727"
-        android:textColorHint="#00B82020"
-        app:layout_constraintBottom_toTopOf="@+id/imageView26"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editHastaneAdi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="403dp"
-        android:layout_height="265dp"
+    <EditText
+        android:id="@+id/editHastaneAdi"
+        android:layout_width="295dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Hastane Adı"
+        android:inputType="textPersonName"
+        android:textColor="#F2F5EC"
+        android:textColorHint="#F2F5EC"
+        app:layout_constraintBottom_toTopOf="@+id/btnHstnEkle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnHstnEkle"
+        android:layout_width="108dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="28dp"
+        android:background="#4BA5EC"
+        android:onClick="hastaneEkle"
+        android:text="EKLE"
+        android:textColor="#191F1E"
+        android:textColorHighlight="#12962727"
+        android:textColorHint="#00B82020"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="411dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/clc_healthcare" />
-
-    <Spinner
-        android:id="@+id/spnrHastaneAdi6"
-        android:layout_width="352dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnHstnSil3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

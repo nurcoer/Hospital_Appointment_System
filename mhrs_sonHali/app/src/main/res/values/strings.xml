@@ -11,22 +11,4 @@
     <string name="login_failed">"Login failed"</string>
     <string name="giri_yap">Giriş Yap</string>
     <string name="kay_t_ol">Kayıt Ol</string>
-
-
-
-    <string-array name="saatler">
-        <item> 09.00 </item>
-        <item> 09.30 </item>
-        <item> 10.00 </item>
-        <item> 10.30 </item>
-        <item> 11.00 </item>
-        <item> 11.30 </item>
-        <item> 13.30 </item>
-        <item> 14.00 </item>
-        <item> 14.30 </item>
-        <item> 15.00 </item>
-        <item> 15.30 </item>
-        <item> 16.00 </item>
-        <item> 16.30 </item>
-    </string-array>
 </resources>

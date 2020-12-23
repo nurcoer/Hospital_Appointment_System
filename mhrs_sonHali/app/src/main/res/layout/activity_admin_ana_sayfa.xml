@@ -2,12 +2,9 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9C000000"
-    tools:context=".admin_anasayfa">
-
+    tools:context=".AdminAnaSayfaActivity">
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="53dp"
@@ -17,7 +14,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:foreground="@drawable/profil1"
         app:layout_constraintBottom_toTopOf="@+id/consHastaneler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
@@ -44,24 +40,14 @@
             android:layout_height="28dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:autoText="false"
             android:background="#9DCE6B"
-            android:foregroundGravity="center"
-            android:freezesText="false"
-            android:lineSpacingExtra="18sp"
-            android:textAllCaps="true"
+            android:text="                               HASTANELER"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#2B2525"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            app:autoSizeTextType="uniform"
-            app:fontFamily="serif"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="HASTANE İŞLEMLERİ" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnHastaneEkle"
@@ -73,7 +59,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:text="Hastane Ekle"
+            android:onClick="HastaneEkle"
+            android:text="Hasane Ekle"
             app:layout_constraintBottom_toTopOf="@+id/btnHastaneDuzenle"
             app:layout_constraintEnd_toStartOf="@+id/btnHastaneSil"
             app:layout_constraintHorizontal_bias="0.262"
@@ -126,26 +113,16 @@
             android:id="@+id/txtDoktor"
             android:layout_width="394dp"
             android:layout_height="28dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:autoText="false"
-            android:background="#9DCE6B"
-            android:foregroundGravity="center"
-            android:freezesText="false"
-            android:lineSpacingExtra="18sp"
-            android:textAllCaps="true"
+            android:background="#B56DC4"
+            android:text="                               DOKTORLAR"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#2B2525"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            app:autoSizeTextType="uniform"
-            app:fontFamily="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="DOKTOR İŞLEMLERİ" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnDoktorEkle"
@@ -153,6 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
@@ -160,7 +138,8 @@
             app:layout_constraintBottom_toTopOf="@+id/btnDoktorDuzenle"
             app:layout_constraintEnd_toStartOf="@+id/btnDoktorSil"
             app:layout_constraintHorizontal_bias="0.238"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDoktor" />
 
         <Button
             android:id="@+id/btnDoktorDuzenle"
@@ -180,12 +159,14 @@
             android:id="@+id/btnDoktorSil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginBottom="8dp"
             android:text="Doktor Sil"
             app:layout_constraintBottom_toTopOf="@+id/btnDoktorDuzenle"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDoktor" />
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
@@ -205,26 +186,16 @@
             android:id="@+id/txtBolum"
             android:layout_width="394dp"
             android:layout_height="28dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:autoText="false"
-            android:background="#9DCE6B"
-            android:foregroundGravity="center"
-            android:freezesText="false"
-            android:lineSpacingExtra="18sp"
-            android:textAllCaps="true"
+            android:background="#8DC6E9"
+            android:text="                               BÖLÜMLER"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#2B2525"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            app:autoSizeTextType="uniform"
-            app:fontFamily="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="BÖLÜM İŞLEMLERİ" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnBolumEkle"
@@ -232,25 +203,30 @@
             android:layout_height="51dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
+            android:onClick="BolumEkle"
             android:text="Bölüm Ekle"
             app:layout_constraintBottom_toTopOf="@+id/btnBolumDuzenle"
             app:layout_constraintEnd_toStartOf="@+id/bnBolumSil"
             app:layout_constraintHorizontal_bias="0.302"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBolum" />
 
         <Button
             android:id="@+id/bnBolumSil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
             android:layout_marginBottom="8dp"
             android:text="Bölüm Sil"
             app:layout_constraintBottom_toTopOf="@+id/btnBolumDuzenle"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBolum" />
 
         <Button
             android:id="@+id/btnBolumDuzenle"

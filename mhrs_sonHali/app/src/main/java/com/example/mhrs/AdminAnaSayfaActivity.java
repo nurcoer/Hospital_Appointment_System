@@ -4,26 +4,24 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class AdminAnaSayfaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_admin_ana_sayfa);
     }
 
-
-    public void Giris(View v)
+    public void HastaneEkle(View v)
     {
-        Intent intn = new Intent(this,GirisActivity.class);
+        Intent intn = new Intent(this,HasteneEkleActivity.class);
         this.startActivity(intn);
     }
-    public void Kayit(View v)
-    {
-        Intent intn = new Intent(this,KayitActivity.class);
-        this.startActivity(intn);
 
+    public void BolumEkle(View v)
+    {
+        Intent intn = new Intent(this,BolumEkleActivity.class);
+        this.startActivity(intn);
     }
 }
